@@ -7,6 +7,7 @@ This hello world shows a unit test executed in Spock.
 How to test
 * $ cd gradle-spock
 * $ gradle test
+* The test will fail on purpose. Open the HTML report generated in ./build/reports/tests/test/index.html
 
 Tech Stack
 * Intellij IDEA 2016.1.4
