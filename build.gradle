@@ -1,8 +1,10 @@
-// please use gradle 3.5.1
-apply plugin: "groovy" // this replaces and improves the 'java' plugin, adding Groovy support
+// tested with gradle 4.0.0
+plugins {
+    id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
+}
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
