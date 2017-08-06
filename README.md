@@ -11,7 +11,7 @@ How to test
 
 Tech Stack
 * Intellij IDEA 2016.1.4
-* Gradle 3.5.1
+* Gradle 4.0.0
 * Java 8
 * Spock 1.1
 
