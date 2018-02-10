@@ -1,6 +1,14 @@
-// tested with gradle 4.0.0
-plugins {
-    id 'groovy' // this replaces and improves the 'java' plugin, adding Groovy support, used in tests
+apply plugin: 'kotlin'
+apply plugin: 'groovy'
+
+buildscript {
+    ext.kotlin_version = '1.2.21'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
 
 repositories {
@@ -8,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'org.apache.clerezza.ext:org.json.simple:0.4'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
 }
 

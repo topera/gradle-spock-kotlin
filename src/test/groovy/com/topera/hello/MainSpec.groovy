@@ -1,16 +1,16 @@
-package com.topera.angel.tree
+package com.topera.hello
 
 
 import spock.lang.Specification
 
 /**
- * Created by topera on 23/07/17.
+ * Created by topera on 10/02/18.
  */
 class MainSpec extends Specification {
 
     def "test"() {
         expect:
-        Main.main()
+        "Hi" == new Main().test()
     }
 
 }
