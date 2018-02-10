@@ -8,6 +8,7 @@ repositories {
 }
 
 dependencies {
+    compile 'org.apache.clerezza.ext:org.json.simple:0.4'
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
 }
 
